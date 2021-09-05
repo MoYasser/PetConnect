@@ -10,7 +10,7 @@ import Navbar from './components/Navbar';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Signup />
+    <Login />
   </React.StrictMode>,
   document.getElementById('root')
 );
