@@ -1,13 +1,218 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Ebrima";
+  color: #08415C;
+  background-color: #D9CAB3;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #08415C;
+}
+
+.navbar h1{
+  font-weight: bold;
+  color:#5D9BFF;
+  background-color: #08415C;
+}
+
+.navbar .petConnect{
+  font-family: "Dancing Script";
+  color:#CC2936;
+  background-color: #08415C;
+}
+
+.navbar .links{
+  margin-left: auto;
+  background-color: #08415C;
+}
+
+.navbar a{
+  margin-left: auto;
+  text-decoration: none;
+  padding: 6px;
+  color: #5D9BFF;
+  background-color: #08415C;
+}
+
+.navbar a:hover{
+  color:#CC2936;
+}
+
+.login{
+  width: 450px;
+  height: 450px;
+  padding:20px;
+  padding-top: 30px;
+  text-align: center;
+  background-color: #08415C;
+  border-radius: 50px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,50%);
+  transform: translate(-50%,-50%);
+}
+
+.login input{
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding:14px 10px;
+  background-color: rgba(255,255,255,.2);
+  border-radius: 5px;
+  border:2px solid #FFFFFF;
+  width: 398px;
+  height: 55px;
+  color: #FFFFFF;
+}
+
+.login input::placeholder{
+  color: #FFFFFF;
+}
+
+.login input:hover{
+  background-color: #FFFFFF;
+  color: #08415C;
+}
+
+.login input:hover::placeholder{
+  color: #08415C;
+}
+
+.login button{
+  background-color: #FFFFFF;
+  color: #5D9BFF;
+  font-weight: bold;
+  width: 398px;
+  height:55px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.login button:hover{
+  background-color: #5D9BFF;
+  color: #FFFFFF;
+}
+
+.login h1{
+  font-family: "Dancing Script";
+  font-weight: bold;
+  color: #CC2936;
+  background-color: #08415C;
+  font-size: 72px;
+  margin-bottom: 40px;
+}
+
+.login .links{
+  margin: auto;
+  background-color: #08415C;
+  width: 398px;
+}
+
+.login a{
+  background-color: #08415C;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding-top: 20px;
+}
+
+.login a:hover{
+  color:#CC2936;
+}
+
+.login .signup{
+  float: left;
+}
+
+.login .forgot{
+  float:right;
+}
+
+.signup{
+  text-align: center;
+}
+
+.signup h1{
+  font-family: "Dancing Script";
+  font-weight: bold;
+  text-align: center;
+  color:#CC2936;
+  font-size: 60px;
+  padding: 5px;
+}
+
+.signup h2{
+  font-family: "Dancing Script";
+  font-weight: bold;
+  text-align: center;
+  color:#08415C;
+  font-size: 54px;
+}
+
+.signup .petconnect{
+  color: #5D9BFF;
+}
+
+.signup .inputs{
+  
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 200px;
+  row-gap: 15px;
+}
+
+.signup input{
+  display: block;
+  text-align: left;
+  margin: 20px auto;
+  padding:14px 10px;
+  background-color: rgba(255,255,255,.2);
+  border-radius: 5px;
+  border:2px solid #FFFFFF;
+  width: 398px;
+  height: 55px;
+  color: #08415C;
+}
+
+.signup input::placeholder{
+  color: #08415C;
+}
+
+.signup input:hover{
+  background-color: #FFFFFF;
+  color: #08415C;
+}
+
+.signup input:hover::placeholder{
+  color: #08415C;
+}
+
+.signup button{
+  background-color: #FFFFFF;
+  color: #08415C;
+  font-weight: bold;
+  width: 398px;
+  height:55px;
+  border: 0;
+  border-radius: 5px;
+  margin-top:20px;
+}
+
+.signup button:hover{
+  background-color: #08415C;
+  color: #FFFFFF;
+}
+
+.content{
+  margin: 2px;
+  padding: 2px;
 }
