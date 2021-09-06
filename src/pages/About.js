@@ -23,6 +23,12 @@ export class About extends Component {
                         that are willing to take in your pets
                         at an affordable price!
                     </p>
+                    <h2>ABOUT US:</h2>
+                    <label>
+                        This website is created for Full Stack Development Training
+                        Under Supervision of Valoro
+                        Copyight Of Ain Shams University CESS Students 2021©
+                    </label>
                 </div>
                 </body>
             </React.Fragment>

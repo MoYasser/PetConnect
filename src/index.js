@@ -14,7 +14,7 @@ import Main from './pages/Main';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Main />
+    <About />
   </React.StrictMode>,
   document.getElementById('root')
 );
