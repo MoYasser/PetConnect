@@ -396,6 +396,7 @@
   justify-content: left;
   padding: 5%;
   padding-top: 2.5%;
+  padding-bottom: 0;
   width: 50vw;
   background-color: transparent;
 }
