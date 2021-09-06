@@ -8,11 +8,13 @@ import Login from './pages/Login';
 import Forgot from './pages/Forgot';
 import Search from './pages/Search';
 import Results from './pages/Results';
+import About from './pages/About';
+import Main from './pages/Main';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Login />
+    <Main />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -20,6 +20,13 @@ export class Search extends Component {
                     placeholder="Check In" />
                     <input type="text" placeholder="City" />
                     <button>SEARCH</button>
+                    <img style={{
+                        margin:-100,
+                        position: 'fixed',
+                        top:90,
+                        left:750,
+                        backgroundColor: 'transparent',
+                    }}src={'../photoset.svg'} />
             </div>
             </React.Fragment>
         )
