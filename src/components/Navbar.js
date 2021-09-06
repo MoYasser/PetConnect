@@ -9,7 +9,7 @@ export class Navbar extends Component {
                     <a href="/home">Home</a>
                     <a href="/connect">Connect</a>
                     <a href="/about">About</a>
-                    <a href="/login">Log On!</a>
+                    <a href="/login">Log In!</a>
                     <a href="/create">New Blog</a>
                 </div>
             </nav>

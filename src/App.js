@@ -1,6 +1,5 @@
 import Navbar from './components/Navbar';
-import Signup from './components/Signup';
-import Login from './components/Login';
+import Signup from './pages/Signup';
 
 function App() {
 const title ="Welcome dumb";
@@ -10,7 +9,7 @@ const likes = 50;
     <div className="App">
       <Navbar/>
       <div className="content"></div>
-      <Login/>
+      
     </div>
   );
 }

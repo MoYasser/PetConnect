@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Navbar from './Navbar'
+import Navbar from '../components/Navbar'
 
 export class Signup extends Component {
     render() {
@@ -47,7 +47,11 @@ export class Signup extends Component {
                     }}src={'../pawsmir.svg'} />
                     <div className="inputs">
                         <input type="email" name="" id="" placeholder="E-mail" />
-                        <input type="date" name="" id="" placeholder="Birthdate"/>
+                        <input 
+                        type="date" 
+                        onFocus={(e) => (e.currentTarget.type = "date")}
+                        onBlur={(e) => (e.currentTarget.type = "text")}
+                        name="" id="" placeholder="Birth Date"/>
                         <input type="text" placeholder="Username" />
                         <input type="number" name="" id="" placeholder="ID" />
                         <input type="password" name="" id="" placeholder="Password" />

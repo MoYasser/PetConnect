@@ -7,6 +7,17 @@
   background-color: #D9CAB3;
 }
 
+.parent{
+  height: 100vh;
+}
+
+.mybody{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .navbar{
   padding: 10px;
   display: flex;
@@ -44,7 +55,79 @@
   color:#CC2936;
 }
 
-.login{
+.cardbox{
+  flex-wrap: wrap;
+  display: flex;
+  column-gap: 50px;
+}
+
+.cardbox .infocard{
+  margin: 30px auto;
+  width: fit-content;
+  height: fit-content;
+  padding:10px;
+  text-align: center;
+  background-color: #08415C;
+  border-radius: 50px;
+}
+.cardbox .infocard .pfp{
+  background-color: #CC2936;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.cardbox .infocard button{
+  background-color: #FFFFFF;
+  color: #5D9BFF;
+  font-weight: bold;
+  border: 0;
+  border-radius: 5px;
+}
+
+.cardbox .infocard h1{
+  font-size: 20px;
+  background-color: #08415C;
+  color: #CC2936;
+  margin-bottom: 0px;
+}
+
+.cardbox .infocard h2{
+  font-size: 16px;
+  background-color: #08415C;
+  color: #CC2936;
+  width: 40%;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+
+.cardbox .infocard p{
+  font-size: 14px;
+  background-color: #08415C;
+  color: #5D9BFF;
+  width: 40%;
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+.cardbox .infocard .info{
+  background-color: #08415C;
+  border-radius: 50px;
+}
+
+.cardbox .infocard .name{
+  background-color: #08415C;
+  border-radius: 50px;
+}
+
+.inputcard{
   width: 450px;
   height: 450px;
   padding:20px;
@@ -52,15 +135,9 @@
   text-align: center;
   background-color: #08415C;
   border-radius: 50px;
-  margin: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%,50%);
-  transform: translate(-50%,-50%);
 }
 
-.login input{
+.inputcard input{
   display: block;
   text-align: center;
   margin: 20px auto;
@@ -73,20 +150,20 @@
   color: #FFFFFF;
 }
 
-.login input::placeholder{
+.inputcard input::placeholder{
   color: #FFFFFF;
 }
 
-.login input:hover{
+.inputcard input:hover{
   background-color: #FFFFFF;
   color: #08415C;
 }
 
-.login input:hover::placeholder{
+.inputcard input:hover::placeholder{
   color: #08415C;
 }
 
-.login button{
+.inputcard button{
   background-color: #FFFFFF;
   color: #5D9BFF;
   font-weight: bold;
@@ -96,12 +173,21 @@
   border-radius: 5px;
 }
 
-.login button:hover{
+.inputcard button:hover{
   background-color: #5D9BFF;
   color: #FFFFFF;
 }
 
-.login h1{
+.inputcard h2{
+  font-family: "Dancing Script";
+  font-weight: bold;
+  color: #CC2936;
+  background-color: #08415C;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.inputcard h1{
   font-family: "Dancing Script";
   font-weight: bold;
   color: #CC2936;
@@ -110,29 +196,110 @@
   margin-bottom: 40px;
 }
 
-.login .links{
+.inputcard .links{
   margin: auto;
   background-color: #08415C;
   width: 398px;
 }
 
-.login a{
+.inputcard a{
   background-color: #08415C;
   text-decoration: none;
   color: #FFFFFF;
   padding-top: 20px;
 }
 
-.login a:hover{
+.inputcard a:hover{
   color:#CC2936;
 }
 
-.login .signup{
+.inputcard .signup{
   float: left;
 }
 
-.login .forgot{
+.inputcard .forgot{
   float:right;
+}
+
+.searchcard{
+  width: 550px;
+  height: 550px;
+  padding:20px;
+  padding-top: 40px;
+  text-align: center;
+  background-color: #08415C;
+  border-radius: 50px;
+  margin: auto;
+  position: absolute;
+  top: 67%;
+  transform: translate(25%,-67%);
+}
+
+.searchcard input{
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding:14px 10px;
+  background-color: rgba(255,255,255,.2);
+  border-radius: 5px;
+  border:2px solid #FFFFFF;
+  width: 398px;
+  height: 55px;
+  color: #FFFFFF;
+}
+
+.searchcard input::placeholder{
+  color: #FFFFFF;
+}
+
+.searchcard input:hover{
+  background-color: #FFFFFF;
+  color: #08415C;
+}
+
+.searchcard input:hover::placeholder{
+  color: #08415C;
+}
+
+.searchcard button{
+  background-color: #FFFFFF;
+  color: #5D9BFF;
+  font-weight: bold;
+  width: 398px;
+  height:55px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.searchcard button:hover{
+  background-color: #5D9BFF;
+  color: #FFFFFF;
+}
+
+.searchcard h1{
+  font-family: "Dancing Script";
+  font-weight: bold;
+  color: #CC2936;
+  background-color: #08415C;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.searchcard .links{
+  margin: auto;
+  background-color: #08415C;
+  width: 398px;
+}
+
+.searchcard a{
+  background-color: #08415C;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding-top: 20px;
+}
+
+.searchcard a:hover{
+  color:#CC2936;
 }
 
 .signup{

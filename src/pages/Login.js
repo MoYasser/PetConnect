@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-import Navbar from './Navbar'
+import Navbar from '../components/Navbar'
 
 export class Login extends Component {
     render() {
         return (
             <React.Fragment>
-                <Navbar/>
-                <div className='login'>
+                <Navbar />
+                <div className="mybody">
+                <div className="inputcard">
                     <h1>Welcome</h1>
                     <input type="text" placeholder="Username" />
                     <input type="password" placeholder="Password" />
@@ -15,6 +16,7 @@ export class Login extends Component {
                         <a href="/signup" className="signup">Sign Up Now!</a>
                         <a href="/forgotpass" className="forgot">Forgot Password?</a>
                     </div>
+                </div>
                     <img style={{
                         position: 'fixed',
                         top:415,
@@ -27,7 +29,7 @@ export class Login extends Component {
                         left:710,
                         backgroundColor: 'transparent',
                     }}src={'../bones.svg'} />
-                </div>
+            </div>
             </React.Fragment>
         )
     }
