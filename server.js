@@ -1,9 +1,12 @@
 const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
+const dotenv = require('dotenv');
+const cors = require('cors');
 
 const AuthRoute = require('./routes/auth')
 const app = express();
+dotenv.config()
 
 const DBlink = 'mongodb+srv://Meck:1234@petconnect.b5e1v.mongodb.net/myDB1?retryWrites=true&w=majority';
 mongoose.connect(DBlink, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -30,4 +33,4 @@ app.get('/home', (req, res) => {
     res.render('index2', { title: 'Home page', startpg});
   });
 
-app.use('/api', AuthRoute)
+app.use('/app',AuthRoute)

@@ -1,8 +1,8 @@
 const User   = require('../models/User')
 const bcrypt = require('bcrypt')
-const jwt    = require('jsonwebtoken')
+const jwt = require('jsonwebtoken')
 
-const register = (req, res, next) => {
+const register = (req, res) => {
     bcrypt.hash(req.body.password, 10, function(err, hashedPass){
         if (err){
             res.json({
@@ -14,7 +14,11 @@ const register = (req, res, next) => {
         name : req.body.name,
         email : req.bcrypt.email,
         number : req.body.number,
-        password : hashedPass
+        // eslint-disable-next-line no-undef
+        password : req.body.password,
+        address : req.body.address,
+        pet_type : req.body.pet_type,
+        pet_age : req.body.pet_age
     })
     user.save()
     .then(user => {
@@ -29,7 +33,7 @@ const register = (req, res, next) => {
     })
 }
 
-const login  = (req, res, next) =>{
+const login  = (req, res) =>{
     var username = req.body.username
     var password = req.body.password
 
