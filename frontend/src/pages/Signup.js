@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Navbar from '../components/Navbar'
 
 export class Signup extends Component {
+
     render() {
         return (
             <React.Fragment>

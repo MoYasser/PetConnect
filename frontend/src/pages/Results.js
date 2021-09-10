@@ -1,11 +1,8 @@
-import React, { Component } from 'react'
+import React  from 'react'
 import Navbar from '../components/Navbar'
 
-export class Results extends Component {
-    render() {
+function Results() {
         return (
-            <React.Fragment>
-                <Navbar />
                 <div className="cardbox">
                     <div className="infocard">
                         <div className="name">
@@ -25,9 +22,7 @@ export class Results extends Component {
                         <button>CONNECT</button>
                     </div>
                 </div>
-            </React.Fragment>
-        )
-    }
+        );
 }
 
 export default Results

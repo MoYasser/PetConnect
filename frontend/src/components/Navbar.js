@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import {BrowserRouter,Link} from 'react-router-dom'
+import {View, Button, Text} from 'react-native'
+import Signup from '../pages/Signup'
 
 export class Navbar extends Component {
     render() {
@@ -10,7 +13,8 @@ export class Navbar extends Component {
                     <a href="/connect">Connect</a>
                     <a href="/about">About</a>
                     <a href="/login">Log In!</a>
-                    <a href="/create">New Blog</a>
+                    <a href="/signup">Sign Up
+                    </a>
                 </div>
             </nav>
         )
