@@ -13,9 +13,6 @@ dotenv.config()
 const DBlink = 'mongodb+srv://Meck:1234@petconnect.b5e1v.mongodb.net/myDB1?retryWrites=true&w=majority';
 mongoose.connect(DBlink, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(result => {
-      app.get("/api", (req, res) => {
-       res.json({ message: "Hello from server!" });
-        })
       app.listen(process.env.PORT || 8080);
     })
     .catch((err) => console.log(err));
@@ -24,7 +21,7 @@ mongoose.connect(DBlink, { useNewUrlParser: true, useUnifiedTopology: true })
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
-app.use(morgan('dev'));
+app.use(morgan('tiny'));
 app.use(cors())
 app.use((req, res, next) => {
   res.locals.path = req.path;
@@ -41,10 +38,10 @@ app.get('/home', (req, res) => {
   
 app.get('/reg', (req, res) => {
     const user = new User({
-      name : 'Mariam Meckawy',
-      email : 'Mariam@yahoo.com',
-      phone : '11227788',
-      password: 'test7899',
+      name : 'Sara',
+      email : 'jj@hotmail.com',
+      phone : '11227799',
+      password: 'test1239',
       address : 'test address',
       pet_type : 'dog',
       pet_age : '7'

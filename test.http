@@ -5,7 +5,7 @@ Content-Type: application/json
     "name": "Mariam Meckawy",
     "email" : "Mariam@yahoo.com",
     "phone" : "11227788",
-    "password": "test7899",
+    "password": "test799",
     "address" : "test address",
     "pet_type" : "dog",
     "pet_age" : "7"

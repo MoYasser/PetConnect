@@ -10,11 +10,11 @@ import Search from './pages/Search';
 import Results from './pages/Results';
 import About from './pages/About';
 import Main from './pages/Main';
+import DB from './database'
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <About />
-  </React.StrictMode>,
+
+    <DB/>,
   document.getElementById('root')
 );
