@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Navbar from '../components/Navbar'
+import {Link } from "react-router-dom";
 
 export class Forgot extends Component {
     render() {
@@ -12,7 +13,7 @@ export class Forgot extends Component {
                     <input type="text" placeholder="Username" />
                     <input type="password" placeholder="Password" />
                     <input type="password" placeholder="New Password" />
-                    <button>RESET</button>
+                    <Link to="/login"><button>RESET</button></Link>
                     <img style={{
                         position: 'fixed',
                         top:580,

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Navbar from '../components/Navbar'
+import {Link } from "react-router-dom";
 
 export class Login extends Component {
     render() {
@@ -11,10 +12,10 @@ export class Login extends Component {
                         <h1>Welcome</h1>
                         <input type="text" placeholder="Username" />
                         <input type="password" placeholder="Password" />
-                        <button>LOGIN</button>
+                        <Link to="/search"><button>LOGIN</button></Link>
                         <div className="links">
-                            <a href="/signup" className="signup">Sign Up Now!</a>
-                            <a href="/forgotpass" className="forgot">Forgot Password?</a>
+                            <Link to="/signup"><a href="/signup" className="signup">Sign Up Now!</a></Link>
+                            <Link to="/forgot"><a href="/forgotpass" className="forgot">Forgot Password?</a></Link>
                         </div>
                     </div>
                     <img style={{

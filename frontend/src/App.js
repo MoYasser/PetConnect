@@ -12,26 +12,21 @@ import Search from "./pages/Search";
 
 function App() {
   return (
-<<<<<<< HEAD
    <Router>
        <div className= "App">
-           <Navbar />
            <div className="content">
                 <Switch>
                     <Route exact path="/">
+                        <Main />
+                    </Route>
+                    <Route path ="/About">
                         <About />
                     </Route>
-                    <Router path "/about">
-                        <About />
-                    </Router>
                     <Route path ="/Forgot">
                         <Forgot />
                     </Route>
                     <Route path ="/Login">
                         <Login />
-                    </Route>
-                    <Route path ="/Main">
-                        <Main />
                     </Route>
                     <Route path ="/Results">
                         <Results />
@@ -46,13 +41,6 @@ function App() {
            </div>
        </div>
    </Router>
-=======
-    <Router>
-      <Switch>
-        <Route exact path ="/results" component={Results} />
-      </Switch>
-    </Router>
->>>>>>> tst
   );
 }
 

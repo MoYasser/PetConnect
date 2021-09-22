@@ -1,5 +1,6 @@
 import React  from 'react'
 import Navbar from '../components/Navbar'
+import {Link } from "react-router-dom";
 
 function Results() {
         return (
@@ -19,7 +20,7 @@ function Results() {
                             <h2>Rating</h2>
                             <p>4.3</p>
                         </div>
-                        <button>CONNECT</button>
+                        <Link to="/about"><button>CONNECT</button></Link>
                     </div>
                 </div>
         );

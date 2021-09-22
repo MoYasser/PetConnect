@@ -7,16 +7,14 @@ export class Navbar extends Component {
     render() {
         return (
             <nav className="navbar">
-                <h1><a href= "/home">Pet<span className= "petConnect">Connect</span></a></h1>
+                <h1><a href= "/">Pet<span className= "petConnect">Connect</span></a></h1>
                 <div className="links">
-                    <Link to="/">About</Link>
                     <Link to="/forgot">Forgot</Link>
                     <Link to="/about">About</Link>
                     <Link to="/login">Login</Link>
                     <Link to="/signup">Signup</Link>
                     <Link to="/search">Search</Link>
-                    <Link to="/main">Main</Link>
-                    <Link to="/results"Result></Link>
+                    <Link to="/results">Result</Link>
                 </div>
             </nav>
         )

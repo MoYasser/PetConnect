@@ -10,7 +10,6 @@ import Search from './pages/Search';
 import Results from './pages/Results';
 import About from './pages/About';
 import Main from './pages/Main';
-import Database from './Database.js'
 
 
 ReactDOM.render(

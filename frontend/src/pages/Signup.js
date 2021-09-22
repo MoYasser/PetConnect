@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Navbar from '../components/Navbar'
+import {Link } from "react-router-dom";
 
 export class Signup extends Component {
 
@@ -60,7 +61,7 @@ export class Signup extends Component {
                         <input type="password" name="" id="" placeholder="Re-Enter Password" /> 
                         <input type="text" placeholder="Address" />
                     </div>
-                    <button>SIGN UP</button>
+                    <Link to="/login"><button>SIGN UP</button></Link>
                 </div>
             </React.Fragment>
         )
