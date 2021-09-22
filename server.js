@@ -38,12 +38,12 @@ app.get('/home', (req, res) => {
   
 app.get('/reg', (req, res) => {
     const user = new User({
-      name : 'Sara',
-      email : 'jj@hotmail.com',
-      phone : '11227799',
-      password: 'test1239',
-      address : 'test address',
-      pet_type : 'dog',
+      name : 'Sarasafdsfsa',
+      email : 'jsdfsfj@hotmail.com',
+      phone : '11227791619',
+      password: 'test1216516539',
+      address : 'testafaf address',
+      pet_type : 'doafafdsafg',
       pet_age : '7'
     }) 
     user.save()

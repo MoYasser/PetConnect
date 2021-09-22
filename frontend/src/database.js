@@ -1,7 +1,11 @@
-import React from 'react';
+
 import axios from 'axios';
 
-class database extends React.Component {
+import React, { Component } from 'react'
+import { NativeModules } from 'react-native';
+
+
+class Database extends React.Component {
   constructor(){
     super()
     this.state = {
@@ -66,7 +70,7 @@ class database extends React.Component {
   }
 
   onSubmit(event){
-    event.preventDefault()
+    event.preventDefault();
     const registered = {
       name: this.state.name,
       email: this.state.email,
@@ -185,4 +189,4 @@ class database extends React.Component {
 }
 
 
-export default database;
+export default Database;
